@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15" width="20" height="15">
+	<title>horizontal view</title>
+	<defs>
+		<image  width="20" height="15" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPAQMAAADeVn0WAAAAAXNSR0IB2cksfwAAAAZQTFRF+bUuAAAADzCudwAAAAJ0Uk5T/wDltzBKAAAAE0lEQVR4nGNggIL//z8wEGKjAQBOdAjL5YZu7wAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+</svg>

@@ -1,0 +1,114 @@
+@use '../custom'as *;
+
+.navbar-light {
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 3%);
+    background: #FFFFFF;
+    padding: 1rem 0;
+
+    .navbar-toggler{
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    .navbar-brand {
+        font-family: $sansation;
+        font-weight: bold;
+        color: $main;
+
+        @media (min-width:1200px) {
+            
+            min-width: 20.25rem;
+        }
+
+        &:hover,
+        &:focus {
+            color: $main;
+        }
+    }
+
+
+
+    .custom-container-fluid {
+        @media (min-width:1200px) {         
+            padding-left: 3.125rem;
+            padding-right: 1.875rem;
+        }
+    }
+
+    .search-form {
+        margin-left: 1.5rem;
+        max-width: 474px;
+        width: 100%;
+        min-height: 40px;
+        background-color: #E4F5F5;
+        padding: 6px 11px;
+
+        @media (max-width:991px) {
+            margin:20px auto;
+            max-width: none;
+        }
+
+        .form-control {
+            background: transparent;
+            border: 0;
+        }
+
+        .form-control {
+            background-color: transparent;
+            padding: 0px;
+
+
+            font-family: $roboto;
+            font-size: 15px;
+            line-height: 18px;
+
+            &::placeholder {
+                color: #C5C5C5;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .btn-outline-transparent {
+            padding: 0 6px;
+
+            i {
+                color: $yellow;
+            }
+        }
+    }
+
+    .navbar-pages {
+
+        .nav-link {
+            padding-right: 0.8125rem;
+            padding-left: 0.8125rem;
+
+            i {
+                color: $main;
+            }
+
+            &.dropdown-toggle {
+                @media (min-width:992px) {
+                    padding-left: 1.8125rem;
+                }
+
+                &::after {
+                    content: none;
+                }
+
+                span {
+                    color: $darkGray;
+                    font-family: $roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    padding-right: .75rem;
+                }
+            }
+        }
+    }
+}
